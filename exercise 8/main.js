@@ -1,3 +1,6 @@
+//ustaad exercise 9 ayaan dib kaga daray
+
+
 let car ={
     make: "Toyota",
      model: "Camry",
