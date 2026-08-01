@@ -6,3 +6,11 @@ console.log(colors[2]);
 console.log(colors[3]);
 console.log(colors[4]);
 
+// The below is exercise 7
+
+colors.pop();
+console.log(colors);
+
+
+colors.unshift('pink');
+console.log(colors);
