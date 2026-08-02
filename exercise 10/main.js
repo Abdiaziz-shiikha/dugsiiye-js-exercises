@@ -9,7 +9,7 @@ for(let i=1 ; i<=50 ; i++){
 
 //kan wa exercise 11
 
-let fruits = ["banana", "apple", "cherry"];
+// let fruits = ["banana", "apple", "cherry"];
 
 for(let i=0 ; i<fruits.length ; i++){
     console.log(fruits[i]);
@@ -24,3 +24,16 @@ while(i>=0){
     console.log(i);
     i--;
 }
+
+
+//kan wa exercise 13
+
+let i;
+do{
+    i = prompt("please enter a number");
+   
+
+} while(i<10);
+
+console.log(i);
+
