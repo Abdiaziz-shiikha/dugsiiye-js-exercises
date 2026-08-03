@@ -1,10 +1,14 @@
 
-//kan wa exercise 19
+// //kan wa exercise 19
+
+const numbers = [1, 2, 3, 4, 5];
+
+numbers.forEach((number) => {
+    console.log(number);
+});
 
 
-
-
-//kan wa exercise 20
+// //kan wa exercise 20
 
 const fruits = ["apple", "banana", "cherry"];
 
@@ -14,7 +18,7 @@ const lengths = fruits.map((fruit)  => {
 
 console.log(lengths); 
 
-//kan wa exercise 21
+// //kan wa exercise 21
 
 const numbers = [1, 2, 3, 4, 5];
 
@@ -42,3 +46,11 @@ let{make,model,year}=cars;
 
 console.log(make);
 console.log(year);
+
+//kan waa exercise 23
+
+function calculateArea(width,height=width){
+    console.log(`the area is ${width*height}M`);
+}
+
+calculateArea(10,10);
