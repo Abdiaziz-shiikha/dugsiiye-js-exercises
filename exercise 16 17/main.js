@@ -1,12 +1,12 @@
 
 //kan wa exercise 16
 
-// let score = 90;
-// if (score >= 50){
-//     console.log("You have passed!");
-// } else {
-//     console.log("You have failed.");
-// }
+let score = 90;
+if (score >= 50){
+    console.log("You have passed!");
+} else {
+    console.log("You have failed.");
+}
 
 //kan wa exercise 17
 
@@ -21,3 +21,11 @@ if (temperature <= 0) {
 } else {
     console.log("It's hot.");
 }
+
+//kan wa exercise 18
+
+let grade = 85;
+let result = grade >= 60 ? "pass": "fail";
+console.log(result);
+
+
