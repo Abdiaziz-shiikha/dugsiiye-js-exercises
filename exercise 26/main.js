@@ -32,7 +32,7 @@ function fetchDatyOfUser(){
     return new Promise((resolve,reject)=>{
     setTimeout(() => {
         
-        const success=true;
+        const success=false;
         if (success){
             resolve("is real user")
         }else{
@@ -45,3 +45,38 @@ function fetchDatyOfUser(){
 fetchDatyOfUser()
 .then(data=>(console.log(data)))
 .catch(err=>(console.log(err)))
+
+
+//kan waa exercise 28
+
+
+
+function fetchDatyOfUser(){
+    return new Promise((resolve,reject)=>{
+    setTimeout(() => {
+        
+        const success=false;
+        if (success){
+            resolve("is real user")
+        }else{
+            reject("failed fetching")
+        }
+       
+    }, 2000);
+})}
+
+
+async function display(){
+    try{
+
+    const user=await fetchDatyOfUser();
+        console.log(user);
+        
+    }catch(err){
+        console.log(err)
+    }}
+
+    display();
+
+    
+   
