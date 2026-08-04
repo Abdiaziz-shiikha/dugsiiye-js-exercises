@@ -1,82 +1,105 @@
-//kan waa exercise 26
+// //kan waa exercise 26
 
-function dataOfUser(){
-    alert ("ma hubtaa inaad xogtan ubaahantahay");
-    return {id:1,name:"ali",city:"qardho"};
-}
-const data=dataOfUser();
-console.log(data)
+// function dataOfUser(){
+//     alert ("ma hubtaa inaad xogtan ubaahantahay");
+//     return {id:1,name:"ali",city:"qardho"};
+// }
+// const data=dataOfUser();
+// console.log(data)
 
 
-function dataOfUser(callback){
-   setTimeout(() => {
-    const user = {id:1,name:"ali",city:"qardho"}; 
-    callback(user)
-   }, 2000);
+// function dataOfUser(callback){
+//    setTimeout(() => {
+//     const user = {id:1,name:"ali",city:"qardho"}; 
+//     callback(user)
+//    }, 2000);
   
     
-}
+// }
 
-dataOfUser (function user(user){
-    console.log(user)
-})
-
-
-console.log("mudane wax yar dulqaado!")
+// dataOfUser (function user(user){
+//     console.log(user)
+// })
 
 
+// console.log("mudane wax yar dulqaado!")
 
-// kan waa exercise 27
 
-function fetchDatyOfUser(){
-    return new Promise((resolve,reject)=>{
-    setTimeout(() => {
+
+// // kan waa exercise 27
+
+// function fetchDatyOfUser(){
+//     return new Promise((resolve,reject)=>{
+//     setTimeout(() => {
         
-        const success=false;
-        if (success){
-            resolve("is real user")
-        }else{
-            reject("failed fetching")
-        }
+//         const success=false;
+//         if (success){
+//             resolve("is real user")
+//         }else{
+//             reject("failed fetching")
+//         }
        
-    }, 2000);
-})}
+//     }, 2000);
+// })}
 
-fetchDatyOfUser()
-.then(data=>(console.log(data)))
-.catch(err=>(console.log(err)))
-
-
-//kan waa exercise 28
+// fetchDatyOfUser()
+// .then(data=>(console.log(data)))
+// .catch(err=>(console.log(err)))
 
 
+// //kan waa exercise 28
 
-function fetchDatyOfUser(){
-    return new Promise((resolve,reject)=>{
-    setTimeout(() => {
+
+
+// function fetchDatyOfUser(){
+//     return new Promise((resolve,reject)=>{
+//     setTimeout(() => {
         
-        const success=false;
-        if (success){
-            resolve("is real user")
-        }else{
-            reject("failed fetching")
-        }
+//         const success=false;
+//         if (success){
+//             resolve("is real user")
+//         }else{
+//             reject("failed fetching")
+//         }
        
-    }, 2000);
-})}
+//     }, 2000);
+// })}
 
 
-async function display(){
-    try{
+// async function display(){
+//     try{
 
-    const user=await fetchDatyOfUser();
-        console.log(user);
+//     const user=await fetchDatyOfUser();
+//         console.log(user);
         
-    }catch(err){
-        console.log(err)
-    }}
+//     }catch(err){
+//         console.log(err)
+//     }}
 
-    display();
+//     display();
 
     
    
+// const user={
+//     name:"ali",
+//     id:2,
+//     city:"xamar"
+// };
+
+// const Jstring=JSON.stringify(user);
+// console.log(Jstring);
+
+// console.log(user)
+
+// const prasadeData= JSON.parse(Jstring);
+// console.log(prasadeData)
+
+
+async function datyFetch() {
+    console.log("start fetching")
+    const response=await fetch('data.JSON');
+    const xog=await response.json();
+    console.log(xog);
+}
+
+datyFetch();
