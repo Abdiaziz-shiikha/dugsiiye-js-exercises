@@ -124,4 +124,24 @@ console.log("multiplay: " , operate(9,6 ,multiply));
 console.log("division: " , operate(9,6 ,divide));
 
 
+//kan waa exercise 31
 
+async function getdata() {
+    console.log("start fetching data")
+    try{
+
+        const response = await fetch('https://jsonplaceholder.typicode.com/users')
+        if(!response.ok){
+            throw new Error (`https error ${response.status}`)
+
+        }
+        const data= await response.json()
+        console.log(data)
+    }catch(error){
+
+        console.log(error)
+    }
+    
+}
+
+getdata();
